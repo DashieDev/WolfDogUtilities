@@ -27,37 +27,15 @@ tasks.named("processResources") {
 }
 
 minecraft {
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+
     mappings channel: 'official', version: '1.19.2'
 
-   
-
-   
-   
     runs {
         client {
             workingDirectory project.file('run')
 
-           
-           
-           
-           
-           
             property 'forge.logging.markers', 'REGISTRIES'
 
-           
-           
-           
             property 'forge.logging.console.level', 'debug'
 
             mods {
@@ -70,15 +48,7 @@ minecraft {
         server {
             workingDirectory project.file('run')
 
-           
-           
-           
-           
-           
             property 'forge.logging.markers', 'REGISTRIES'
-
-           
-           
            
             property 'forge.logging.console.level', 'debug'
 
@@ -92,19 +62,10 @@ minecraft {
         data {
             workingDirectory project.file('run')
 
-           
-           
-           
-           
-           
             property 'forge.logging.markers', 'REGISTRIES'
-
-           
-           
            
             property 'forge.logging.console.level', 'debug'
 
-           
             args '--mod', 'wolfdogutilities', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
@@ -120,33 +81,18 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
     
-   
    flatDir {
         dir 'libs'
     }
 
-   
-   
-   
-   
 }
 
 dependencies {
    
-   
-   
     minecraft 'net.minecraftforge:forge:1.19.2-43.1.47'
 
-   
     compileOnly fg.deobf("blank:DoggyTalentsNext-1.19.2:1.4.1")
-   
 
-   
-   
-
-   
-   
-   
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
