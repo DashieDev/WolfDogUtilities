@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="${fml_version_range}"
+license="All rights reserved"
+issueTrackerURL=""
+displayURL=""
+logoFile=""
+
+
+[[mods]] #mandatory
+    modId="wolfdogutilities"
+    version="${file.jarVersion}"
+    updateJSONURL="https://raw.githubusercontent.com/DashieDev/DoggyTalentsNext/master/check_for_update/update.json"
+    displayName="Wolf & Dog Utilities"
+    credits="dashiedev,percivalalb,RaustBlackDragon,NovaViper"
+    authors="dashiedev,percivalalb"
+    description="The next generation of the beloved-by-many DoggyTalents. Turning your wolves into fun, playful, skillful dogs."
+    displayTest="NONE"
+[[dependencies.wolfdogutilities]] #optional
+    modId="forge"
+    mandatory=true
+    versionRange="${forge_version_range}" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.wolfdogutilities]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.wolfdogutilities]]
+    modId="doggytalents"
+    mandatory=false
+    versionRange="[1.4.1,)"
+    ordering="NONE"
+    side="SERVER"
