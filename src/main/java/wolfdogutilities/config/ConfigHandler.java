@@ -22,7 +22,7 @@ public class ConfigHandler {
         CONFIG_SERVER_SPEC = commonPair.getRight();
         SERVER = commonPair.getLeft();
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CONFIG_SERVER_SPEC);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, CONFIG_SERVER_SPEC);
     }
 
     public static class ServerConfig {
